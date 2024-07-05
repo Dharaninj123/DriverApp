@@ -9,12 +9,20 @@
         android:id="@+id/nav_home"
         android:name="com.example.drivererp.ui.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_nav_home_to_nav_route"
+            app:destination="@id/nav_route" />
+        <action
+            android:id="@+id/action_nav_home_to_mapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.drivererp.ui.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:id="@+id/nav_route"
+        android:name="com.example.drivererp.ui.ui.route.RouteFragment"
+        android:label="Route"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
@@ -22,4 +30,10 @@
         android:name="com.example.drivererp.ui.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.drivererp.ui.ui.Map.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>
