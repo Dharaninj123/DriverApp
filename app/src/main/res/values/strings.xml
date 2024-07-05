@@ -254,6 +254,7 @@
     <string name="signup1">SignUp</string>
     <string name="login1"><u>Login</u></string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="driver_id_24rj19">Driver ID - 24RJ19</string>
 
 
 </resources>
