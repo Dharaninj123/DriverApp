@@ -6,8 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/yellow"
-    tools:context=".LoginActivity">
+    android:background="@color/yellow">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -49,13 +48,7 @@
                 android:textColor="@color/black"
                 android:autofillHints="Mobile number"
                 android:inputType="number"
-                android:padding="10dp"
-                app:boxBackgroundColor="@color/black"
-                app:boxBackgroundMode="outline"
-                app:counterEnabled="true"
-                app:counterMaxLength="10"
-                app:endIconMode="clear_text"
-                app:endIconTint="@color/black" />
+                android:padding="10dp" />
 
             <EditText
                 android:id="@+id/login_password"
@@ -71,11 +64,7 @@
                 android:textColor="@color/black"
                 android:autofillHints="password"
                 android:inputType="textPassword"
-                android:padding="10dp"
-                app:boxBackgroundColor="@color/black"
-                app:boxBackgroundMode="outline"
-                app:counterEnabled="true"
-                app:counterMaxLength="16" />
+                android:padding="10dp" />
 
             <Button
                 android:id="@+id/forgotpassword"
