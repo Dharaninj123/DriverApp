@@ -12,9 +12,17 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Theme.DriverERP.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.DriverERP.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-    <style name="Theme.SchoolERP.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+    <style name="Theme.DriverERP.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
 
+<!-- AppBar Overlay -->
+<style name="Theme.DriverApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    <!-- Customize the AppBar theme here -->
+</style>
+
+<!-- Popup Overlay -->
+<style name="Theme.DriverApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+    <!-- Customize the Popup theme here -->
+</style>
 </resources>

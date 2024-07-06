@@ -1,4 +1,4 @@
-package com.example.drivererp.ui.ui.Map
+package com.example.drivererp.ui.Map
 
 import android.os.Bundle
 import android.view.LayoutInflater

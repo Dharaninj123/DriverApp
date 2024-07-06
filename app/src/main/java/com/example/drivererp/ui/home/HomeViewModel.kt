@@ -1,4 +1,4 @@
-package com.example.drivererp.ui.ui.home
+package com.example.drivererp.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

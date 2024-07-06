@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.drivererp.ui.ui.home.HomeFragment"
+        android:name="com.example.drivererp.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" >
 
@@ -21,9 +21,9 @@
 
     <fragment
         android:id="@+id/nav_route"
-        android:name="com.example.drivererp.ui.ui.route.RouteFragment"
+        android:name="com.example.drivererp.ui.route.RouteFragment"
         android:label="Route"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_route" />
 
     <fragment
         android:id="@+id/nav_slideshow"
@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/mapFragment"
-        android:name="com.example.drivererp.ui.ui.Map.MapsFragment"
+        android:name="com.example.drivererp.ui.Map.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" />
 </navigation>
