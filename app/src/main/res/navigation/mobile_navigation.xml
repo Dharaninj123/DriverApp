@@ -36,4 +36,28 @@
         android:name="com.example.drivererp.ui.Map.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" />
+
+    <fragment
+        android:id="@+id/nav_aadhaar"
+        android:name="com.example.drivererp.ui.AadhaarFragment"
+        android:label="Student Aadhaar"
+        tools:layout="@layout/fragment_aadhaar" />
+
+    <fragment
+        android:id="@+id/nav_license"
+        android:name="com.example.drivererp.ui.LicenseFragment"
+        android:label="Student License"
+        tools:layout="@layout/fragment_aadhaar" />
+
+    <fragment
+        android:id="@+id/nav_insurance"
+        android:name="com.example.drivererp.ui.InsuranceFragment"
+        android:label="Student Insurance"
+        tools:layout="@layout/fragment_insurance" />
+
+    <fragment
+        android:id="@+id/nav_Documents"
+        android:name="com.example.drivererp.ui.DocumentFragment"
+        android:label="Student Documents"
+        tools:layout="@layout/fragment_document" />
 </navigation>
