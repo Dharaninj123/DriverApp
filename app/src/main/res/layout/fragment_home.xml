@@ -1,34 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".ui.home.HomeFragment">
+android:layout_height="match_parent">
 
-    <LinearLayout
+   <TextView
+       android:id="@+id/date"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:text="09-07-2024"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintHorizontal_weight="2"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toStartOf="@id/routeNo"
+       android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/routeNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Route No.1417"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/date"
+        app:layout_constraintEnd_toStartOf="@id/busNo"
+        app:layout_constraintHorizontal_weight="1"/>
+
+ <TextView
+     android:id="@+id/busNo"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:padding="10dp"
+     android:text="KA-53-4664"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintStart_toEndOf="@id/routeNo"
+     app:layout_constraintHorizontal_weight="1"/>
+
+
+    <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        />
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabLayout"
-            app:tabBackground="@drawable/tab_selector"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabGravity="fill"
-            app:tabMode="fixed" />
+    <Button
+        android:id="@+id/start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Start"
+        android:textColor="@color/black"
+        android:backgroundTint="#37E13F"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/end"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="End"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/busNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="10dp"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/start"
+        />
 
 
-<androidx.viewpager.widget.ViewPager
-    android:id="@+id/viewPager"
+    <ImageView
+        android:id="@+id/busicon"
+        android:layout_width="15dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/bus_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/baseline_navigation_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:backgroundTint="@android:color/transparent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/home"
     android:layout_width="match_parent"
-    android:layout_height="0dp"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:layout_weight="1" />
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/busicon"
+    app:layout_constraintStart_toStartOf="parent"/>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 

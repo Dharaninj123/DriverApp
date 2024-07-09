@@ -12,18 +12,18 @@
         tools:layout="@layout/fragment_home" >
 
         <action
-            android:id="@+id/action_nav_home_to_nav_route"
-            app:destination="@id/nav_route" />
+                android:id="@+id/action_homeFragment_to_mapFragment"
+                app:destination="@id/mapFragment" />
+
         <action
             android:id="@+id/action_nav_home_to_mapFragment"
             app:destination="@id/mapFragment" />
-    </fragment>
 
-    <fragment
-        android:id="@+id/nav_route"
-        android:name="com.example.drivererp.ui.route.RouteFragment"
-        android:label="Route"
-        tools:layout="@layout/fragment_route" />
+        <action
+            android:id="@+id/action_homeFragment_to_newFragment"
+            app:destination="@id/studentLocationFragment" />
+
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
@@ -34,7 +34,7 @@
     <fragment
         android:id="@+id/mapFragment"
         android:name="com.example.drivererp.ui.Map.MapsFragment"
-        android:label="fragment_maps"
+        android:label="Live Location"
         tools:layout="@layout/fragment_maps" />
 
     <fragment
@@ -60,4 +60,10 @@
         android:name="com.example.drivererp.ui.DocumentFragment"
         android:label="Student Documents"
         tools:layout="@layout/fragment_document" />
+
+    <fragment
+        android:id="@+id/studentLocationFragment"
+        android:name="com.example.drivererp.ui.studentlocation.StudentsFragment"
+        android:label="Student Fragment" />
+
 </navigation>

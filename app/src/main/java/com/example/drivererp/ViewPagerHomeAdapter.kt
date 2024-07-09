@@ -1,16 +1,15 @@
 package com.example.drivererp
 
-
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.drivererp.ui.Map.MapsFragment
-import com.example.drivererp.ui.route.RouteFragment
+import com.example.drivererp.ui.home.HomeFragment
 
-class ViewPagerRouteAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
+class ViewPagerHomeAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
     private val fragmentList = listOf<Fragment>(
-        RouteFragment(),  // Replace with your actual fragments
+        HomeFragment(),  // Replace with your actual fragments
         MapsFragment()
     )
 
